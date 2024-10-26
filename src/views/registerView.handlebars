@@ -1,0 +1,39 @@
+
+<section class=" flex-column align-items-center justify-content-center my-5">
+
+<h1 class="text-center">User Register </h1>
+
+<div class="container w-25">
+        <form action="/api/sessions/register" method="POST">
+
+            <label class="form-label" for="first_name"> First Name: </label>
+            <input class="form-control" type="text" name="first_name" required>
+              <br>
+            <label class="form-label" for="last_name"> Last Name: </label>
+            <input class="form-control" type="text" name="last_name" required>
+              <br>
+            <label class="form-label" for="email"> Email: </label>
+            <input class="form-control" type="text" name="email" required>
+             <br>
+            <label class="form-label" for="age"> Age: </label>
+            <input class="form-control" type="text" name="age" required>
+              <br>
+
+            <label class="form-label" for="pass"> Password: </label>
+            <input class="form-control" type="text" name="password" required>
+            <br>
+
+            <label class="form-label" for="role"> Role: </label>
+            <select class="form-select" name="role" id="role">
+            <option value="admin">Admin</option>
+            <option value="user">User</option>
+            <option value="user_vip">VIP</option>
+            </select>
+            <br>
+
+            <button class="btn btn-primary" type="submit"> Send </button>
+        </form>
+    </div>
+</section>
+
+
